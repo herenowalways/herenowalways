@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Bi Han & Ja Yeon</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylish-portfolio.css" >
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/Ideal-Image-Slider/ideal-image-slider.css">
+        <link rel="stylesheet" href="css/Ideal-Image-Slider/default.css">
+        <link rel="stylesheet" href="css/animate/animate.min.css">
+
+        <!-- Custom Fonts -->
+        <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Preload -->
+        <link rel="stylesheet" href="css/preloader/flower.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/GridLoadingEffects/modernizr.custom.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+<body>
+    <div class="flower-loader">
+        Loading...
+    </div>
+    <header id="top" class="header delay-animation animated fadeInDown">
+        <div class="text-vertical-center-white">
+        <h1 class = "neon"> Bi Han <span> &amp; </span> Ja Yeon</h1>
+        <h3>2018.10.13</h3>
+        <br>
+        <a href="#about" class="btn">We're Getting Married !</a>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <img class="top_bg_img" src="img/png/flower3_top2.png">
+        <img class="bottom_bg_img" src="img/png/flower3_bottom2.png">
+        <div class="container vertic_child">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <p class="lead_small ">
+                    <img class="img-small" src="img/Flower-by-Valeriy-from-the-Noun-Project.png">
+                    <span class = "text_highlight"> <br>서로가 있기에 눈뜨는 아침이 행복했습니다. </span>
+                    <span class = "text_highlight"> <br>이제 그 행복을 곁에서 함께하려합니다. </span>
+                    <span class = "text_highlight"> <br>저희의 시작하는 모습을 여러분과 함께 하고 싶습니다. </span>
+                </p>
+                </div>
+            <div class="bottom_bg">
+            </div>
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <div id="slider">
+        <a href="gallery/ullengIsland.html"><img src="img/png/flower3.png" alt="Wedding image from Ulleng Island">
+        <a href="gallery/ullengIsland.html"><img src="img/png/flower3.png" alt="Wedding image from Ulleng Island">
+        <a href="gallery/date.html"><img data-src-2x="img/png/flower3.png" src="img/png/flower3.png" alt="Date Snaphot">
+        <a href="gallery/date.html"><img data-src="img/png/flower3.png"  alt="Date Snaphot"></a>
+    </div>
+    <section id="map" class="map">
+        <iframe id="map_iframe"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps/embed/v1/place?key={{ site.google_api_key }}&q={{ site.address }},{{ site.location }}"
+            allowfullscreen>
+        </iframe>
+        <br>
+        <small id="map_iframe"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps/embed/v1/place?key={{ site.google_api_key }}&q={{ site.address }},{{ site.location }}"
+            allowfullscreen>
+        </small>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>{{ site.owner }}</strong></h4>
+                    <p>
+                        {% for address in site.address %}
+                        {{ address.line }}<br>
+                        {% endfor %}
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li><a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>
+                        <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+                        <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-fw fa-3x"></i></a></li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script> 
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//{{ site.disqus_id }}.disqus.com/count.js" async></script>
+    <!-- ideal-image-slider -->
+    <script src="js/Ideal-Image-Slider/ideal-image-slider.js"></script>
+    <script>
+        var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            height: 700, // Required but can be set by CSS
+            interval: 2000
+        });
+        slider.start();
+    </script>
+    <!-- Preloader -->
+    <script>
+        //Preloader
+        $(function(){ // $() == $( document ).ready()
+            $(window).on("load", function(){
+                $('.flower-loader').fadeOut('slow', function() {
+                $(this).remove();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+comments: true
+---
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body>
+  {% include header.html %}
+  {% include saying.html %}
+  {% include slider.html  %}
+  {% include map.html %}
+  {% for post in site.posts %}
+    <!--a href="{{ post.url }}">
+      <h2>{{ post.title }} &mdash; {{ post.date | date_to_string }}</h2>
+    </a-->
+    {{ post.content }}
+  {% endfor %}
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+@font-face { /* HumanWriting Windy*/
+    font-family: "SunshineInMySoul";
+    src: url("../fonts/kimberly-geswein_sunshine-in-my-soul/Sunshine-in-my-Soul.ttf");
+}
+
+@font-face { /* HumanWriting */
+    font-family: "BetterTogether";
+    src: url("../fonts/better-together/Better-Together.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "QaskinBlack";
+    src: url("../fonts/mans-greback/QaskinBlack.ttf");
+}
+
+@font-face { /* Semi Cursive */
+    font-family: "MarriageMoment";
+    src: url("../fonts/Marriage-Moment/Marriage-Moment.ttf");
+}
+
+@font-face { /* Hearty */
+    font-family: "ILoveGlitter";
+    src: url("../fonts/i-love-glitter/I-Love-Glitter.ttf");
+}
+
+@font-face { /* Korean */
+    font-family: "IropkeBatangM";
+    src: url("../fonts/font-awesome/fonts/IropkeBatangM.ttf");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
+/* Custom Horizontal Rule */
+.delay-animation{
+    animation-delay: 2s;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.btn-mid {
+    border-radius: 0;
+    color: #EAEAEA;
+    background-color: rgba(140,140,140,0.4);
+}
+
+.btn-mid:hover,
+.btn-mid:focus,
+.btn-mid:active {
+    color: #EAEAEA;
+    background-color: rgba(140,140,140,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header h1 {
+    font-family: "BetterTogether";
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    font-size: 6vw;
+    font-weight: 700;
+    color: #FFFFFF;
+   /* text-shadow: 3px 3px 3px #5D5D5D; */
+}
+
+.header h1 span{
+    color: #FFD9EC;
+}
+
+.header h3{
+    font-family: "BetterTogether";
+    font-size: 3em;
+    font-size: 4vw;
+    color: #FFFFFF;
+}
+
+.header .btn{
+    font-family: "QaskinBlack";
+    font-size: 3em;
+    font-size: 4vw;
+    color: #FFD9EC;
+}
+
+
+@media(max-width:768px) {
+    .header h1 { /* added */
+        font-size: 3em;
+        font-size: 8vw;
+    }
+    .header h3{
+        font-size: 2.5em;
+        font-size: 5vw;
+    }
+    .header .btn { /* added */
+        font-size: 2.5em;
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: url(../img/bg_small.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+}
+
+.text-vertical-center-white {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+/* Saying */
+
+.about {
+    font-family: "IropkeBatangM";
+    line-height: 200%;
+    padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/png/rep9_white_small.jpg) repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    -o-background-size: auto;
+}
+
+.text_highlight{
+    background-color:  #FFFFFF99;
+    border-radius: 5px;
+}
+.top_bg_img { /* added */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: auto;
+}
+
+.bottom_bg_img { /* added */
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 50%;
+    height: auto;
+}
+
+.vertic_child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: auto;
+}
+
+.lead_small {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: auto;
+    padding: auto;
+    font-size: 1.6em;
+    font-size: 1.8vw;
+}
+
+@media (max-width: 768px) {
+    .about {
+        background: url(../img/png/rep9_white_small.jpg) repeat;
+    }
+    .lead_small {
+        font-size: 1em;
+        font-size: 3.5vw;
+    }
+    .top_bg_img { /* added */
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 75%;
+        height: auto;
+    }
+    .bottom_bg_img { /* added */
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* BlogPost */
+
+.blogpost  {
+  padding: 20px; 
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-small { /* added */
+    display: block;
+    margin: 0 auto;
+    width: 110px; height: 50px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+    .img-small { /* added */
+    display: block;
+    margin: 0 auto;
+    width: 85px; height: 40px;
+    }
+}
+
+/*disable custom maps scrolling behaviour*/
+.scrolloff {
+    pointer-events: none;
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+
+/* Neon */
+
+h1.neon {
+  color: #fff;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+div a:hover {
+  color: #ffffff;
+}
+
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fdd3e9, 0 0 70px #fdd3e9, 0 0 80px #fdd3e9, 0 0 100px #fdd3e9;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fdd3e9,  0 0 20px #fdd3e9;
+  }
+}

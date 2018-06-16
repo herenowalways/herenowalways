@@ -1,0 +1,39 @@
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.js"></script> 
+
+<!-- Disqus -->
+<script id="dsq-count-scr" src="//{{ site.disqus_id }}.disqus.com/count.js" async></script>
+
+<!-- ideal-image-slider -->
+<script src="/js/Ideal-Image-Slider/ideal-image-slider.js"></script>
+<script>
+	var slider = new IdealImageSlider.Slider({
+		selector: '#slider',
+		height: 700, // Required but can be set by CSS
+		interval: 2000
+	});
+    slider.start();
+</script>
+
+<!-- Preloader -->
+<script>
+	//Preloader
+	$(function(){ // $() == $( document ).ready()
+		$(window).on("load", function(){
+			$('.flower-loader').fadeOut('slow', function() {
+			$(this).remove();
+			});
+		});
+	});
+</script>
+
+
+
+
+
