@@ -6,10 +6,6 @@
 
 /* Global Styles */
 
-@font-face { /* HumanWriting Windy*/
-    font-family: "SunshineInMySoul";
-    src: url("../fonts/kimberly-geswein_sunshine-in-my-soul/Sunshine-in-my-Soul.ttf");
-}
 
 @font-face { /* HumanWriting */
     font-family: "BetterTogether";
@@ -21,19 +17,14 @@
     src: url("../fonts/mans-greback/QaskinBlack.ttf");
 }
 
-@font-face { /* Semi Cursive */
-    font-family: "MarriageMoment";
-    src: url("../fonts/Marriage-Moment/Marriage-Moment.ttf");
-}
-
-@font-face { /* Hearty */
-    font-family: "ILoveGlitter";
-    src: url("../fonts/i-love-glitter/I-Love-Glitter.ttf");
-}
-
 @font-face { /* Korean */
     font-family: "IropkeBatangM";
     src: url("../fonts/font-awesome/fonts/IropkeBatangM.ttf");
+}
+
+@font-face { /* Korean */
+    font-family: "HamchorongbatangR";
+    src: url("../fonts/HamchorongbatangR/HamchorongbatangR.ttf");
 }
 
 html,
@@ -48,9 +39,330 @@ body {
 
 
 
-/* Custom Horizontal Rule */
+/* Header */
+
+.header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: "BetterTogether";
+    line-height: 1;
+}
+
+.vertic_child {
+    position: absolute;
+    display: block;
+    padding: 80px 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: auto;
+}
+
+.header__name {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 6vw;
+   /* text-shadow: 3px 3px 3px #5D5D5D; */
+}
+
+.header__name-pink{
+    color: #FFD9EC;
+}
+
+.header__date{
+    font-size: 3em;
+    font-size: 4vw;
+    color: #FFFFFF;
+}
+
+.header__words{
+    font-family: "QaskinBlack",  garamond;
+    font-size: 3em;
+    font-size: 4vw;
+    color: #FFD9EC;
+}
+
+
+@media (max-width: 700px) {
+    .header {
+        background: url(../img/bg_small.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .header__name { /* added */
+        font-size: 3em;
+        font-size: 8vw;
+    }
+    .header__date{
+        font-size: 2.6em;
+        font-size: 5vw;
+    }
+    .header__words { /* added */
+        font-size: 2.6em;
+        font-size: 5vw;
+    }
+}
+
+
+@media(max-width:480px) {
+    .header{
+        line-height: 0.5;
+    }
+    .header__name { /* added */
+        font-size: 1.8em;
+        font-size: 8.5vw;
+    }
+    .header__date{
+        font-size: 1.6em;
+        font-size: 5.5vw;
+    }
+    .header__words { /* added */
+        font-size: 1.6em;
+        font-size: 6.5vw;
+    }
+}
+
 .delay-animation{
     animation-delay: 2s;
+}
+
+.text-vertical-center-white {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+.neon {
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fdd3e9, 0 0 70px #fdd3e9, 0 0 80px #fdd3e9, 0 0 100px #fdd3e9;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fdd3e9,  0 0 20px #fdd3e9;
+    }
+}
+
+/* Greeting */
+
+.greeting {
+    position: relative;
+    display: table;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    font-family: "HamchorongbatangR", "바탕";
+    color: rgb(126, 126, 126);
+    background-color: rgb(255, 221, 221);
+}
+
+.greeting__words {
+    display: block;
+    margin: auto;
+    padding: auto;
+    line-height: 1.7;
+    font-size: 15px;
+    font-size: 1.1em;
+}
+
+.greeting__img { /* added */
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: auto;
+}
+
+.font_inlaw{
+    font-size: 130%;
+    color: rgb(65, 85, 50);
+}
+.font_parent{
+    font-size: 130%;
+    color: rgb(130, 95, 115);
+}
+.font_groom{
+    font-size: 130%;
+    color: rgb(120, 155, 100);
+}
+.font_bride{
+    font-size: 130%;
+    color: rgb(190, 120, 150);
+}
+.font_mid{
+    font-size: 90%;
+}
+
+@media(max-width:1000px) {
+    .greeting{
+        min-height: 650px;
+    }
+    .greeting__img { /* added */
+        width: 120px;
+    }
+    .greeting__words {
+        line-height: 1.7;
+        font-size: 13px;
+        font-size: 1em;
+    }
+}
+
+
+@media(max-width:350px) {
+    .greeting{
+        min-height: 500px;
+    }
+    .greeting__img { /* added */
+        width: 100px;
+    }
+    .greeting__words {
+        line-height: 1.7;
+        font-size: 11px;
+        font-size: 0.75em;
+        font-size: 3.8vw;
+    }
+}
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+    display: block;
+    padding: 80px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    line-height: 200%;
+    font-family: "HamchorongbatangR", "바탕";
+    color: rgb(126, 126, 126);
+    background-color: rgb(150, 200, 195);
+    line-height: 1.7;
+    font-size: 15px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.timeline__img_top { /* added */
+    position: absolute;
+    top: 0%;
+}
+
+.timeline__img_bottom { /* added */
+    position: absolute;
+    bottom: 0%;
+}
+
+.timeline__img_wide { /* added */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.timeline__img_narrow { /* added */
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .timeline__img_wide { /* added */
+        display: none;
+    }
+    .timeline__img_narrow { /* added */
+        display: block;
+    }
+}
+
+.timeline__title{
+    display: block;
+    font-size: 150%;
+    color: rgb(77, 77, 77);
+}
+.timeline__subtitle{
+    font-size: 110%;
+    color: rgb(82, 102, 116);
+    line-height: 400%;
+}
+.timeline__table_section{
+    width: 100%;
+}
+.timeline__table_section_inner{
+    width: 45%;
+    display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .timeline {
+        min-height: 700px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline__table_section_inner{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .timeline {
+        min-height: 570px;
+        font-size: 0.7em;
+        font-size: 3.5vw;
+    }
+    .timeline__table_section_inner{
+        width: 100%;
+        display: block;
+    }
+}
+
+.timeline__table{
+    width: 100%;
+}
+.timeline__td_side{
+    width: 5%;
+}
+.timeline__td_time{
+    width: 30%;
+    text-align: center;
+}
+.timeline__td_content{
+    width: 65%;
+    text-align: left;
+    letter-spacing: 3px;
+}
+.timeline__td_content_desc{
+    font-size: 70%;
+    letter-spacing: 2px;
+}
+.timeline__td_content_name{
+    font-weight: 300;
+    font-size: 95%;
+    letter-spacing: 2px;
 }
 
 /* Custom Button Styles */
@@ -186,162 +498,6 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.header h1 {
-    font-family: "BetterTogether";
-    margin: 0;
-    padding: 0;
-    font-size: 4em;
-    font-size: 6vw;
-    font-weight: 700;
-    color: #FFFFFF;
-   /* text-shadow: 3px 3px 3px #5D5D5D; */
-}
-
-.header h1 span{
-    color: #FFD9EC;
-}
-
-.header h3{
-    font-family: "BetterTogether";
-    font-size: 3em;
-    font-size: 4vw;
-    color: #FFFFFF;
-}
-
-.header .btn{
-    font-family: "QaskinBlack";
-    font-size: 3em;
-    font-size: 4vw;
-    color: #FFD9EC;
-}
-
-
-@media(max-width:768px) {
-    .header h1 { /* added */
-        font-size: 3em;
-        font-size: 8vw;
-    }
-    .header h3{
-        font-size: 2.5em;
-        font-size: 5vw;
-    }
-    .header .btn { /* added */
-        font-size: 2.5em;
-        font-size: 6vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        background: url(../img/bg_small.jpg) no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-}
-
-.text-vertical-center-white {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-}
-
-/* Saying */
-
-.about {
-    font-family: "IropkeBatangM";
-    line-height: 200%;
-    padding: 50px 0;
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/png/rep9_white_small.jpg) repeat;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    background-size: auto;
-    -o-background-size: auto;
-}
-
-.text_highlight{
-    background-color:  #FFFFFF99;
-    border-radius: 5px;
-}
-.top_bg_img { /* added */
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: 50%;
-    height: auto;
-}
-
-.bottom_bg_img { /* added */
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 50%;
-    height: auto;
-}
-
-.vertic_child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    overflow: auto;
-}
-
-.lead_small {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.7;
-    margin: auto;
-    padding: auto;
-    font-size: 1.6em;
-    font-size: 1.8vw;
-}
-
-@media (max-width: 768px) {
-    .about {
-        background: url(../img/png/rep9_white_small.jpg) repeat;
-    }
-    .lead_small {
-        font-size: 1em;
-        font-size: 3.5vw;
-    }
-    .top_bg_img { /* added */
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        width: 75%;
-        height: auto;
-    }
-    .bottom_bg_img { /* added */
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        width: 75%;
-        height: auto;
-    }
-}
 
 /* Services */
 
@@ -437,26 +593,3 @@ footer {
 }
 
 
-/* Neon */
-
-h1.neon {
-  color: #fff;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-div a:hover {
-  color: #ffffff;
-}
-
-/*glow*/
-
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fdd3e9, 0 0 70px #fdd3e9, 0 0 80px #fdd3e9, 0 0 100px #fdd3e9;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fdd3e9,  0 0 20px #fdd3e9;
-  }
-}
