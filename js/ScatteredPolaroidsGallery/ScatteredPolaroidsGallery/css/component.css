@@ -226,6 +226,8 @@
 }
 
 /* Button on photostack container */
+
+
 .js .photostack::after {
 	content: 'View Gallery';
 	font-weight: 400;
