@@ -103,7 +103,7 @@
 
 	Photostack.prototype._init = function() {
 		this.currentItem = this.items[ this.current ];
-		this._addNavigation();
+		//this._addNavigation();
 		this._getSizes();
 		this._initEvents();
 	}
@@ -131,8 +131,9 @@
 				}
 				if( beforeStep ) {
 					this.removeEventListener( 'click', open ); 
-					classie.removeClass( self.el, 'photostack-start' );
-					setTransition();
+					//classie.removeClass( self.el, 'photostack-start' );
+					//setTransition();
+					window.location = $(this).find("a").attr("href"); 
 				}
 				else {
 					self.openDefault = true;
@@ -209,11 +210,11 @@
 
 		classie.removeClass( this.navDots[ this.current ], 'current' );
 		classie.removeClass( this.currentItem, 'photostack-current' );
-		
+
 		// change current
 		this.current = pos;
 		this.currentItem = this.items[ this.current ];
-		
+
 		classie.addClass( this.navDots[ this.current ], 'current' );
 		// if there is something behind..
 		if( this.currentItem.querySelector( '.photostack-back' ) ) {
