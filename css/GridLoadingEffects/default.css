@@ -138,3 +138,65 @@ a:active {
 	}
 
 }
+
+/* Top Scroll */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	height: 50px;
+	width: 50px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: rgb(207, 207, 207, 0.6);
+	color: rgb(107, 107, 107);
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.button__top{
+	width: 25px;
+	height: 25px;
+	opacity: 0.7;
+}
+
+#myBtn:hover {
+	background-color: rgb(100, 100, 100, 0.6);
+}
+
+.button__home{
+	position: relative;
+	display:block;
+	top: 5px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
+	opacity: 0.5;
+}
+
+@media(max-width:480px) {
+
+	#myBtn {
+		height: 40px;
+		width: 40px;
+	}
+	.button__top{
+		width: 20px;
+		height: 20px;
+	}
+
+	.button__home{
+		position: relative;
+		display:block;
+		top: 5px;
+		left: 5px;
+		width: 18px;
+		height: 18px;
+		opacity: 0.5;
+	}
+
+}
+

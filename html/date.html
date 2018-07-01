@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko" class="no-js">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Gallery - Date</title>
-    <meta name="description" content="Loading Effects for Grid Items with CSS Animations" />
-    <meta name="keywords" content="../css animation, loading effect, google plus, grid items, masonry" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="../css/GridLoadingEffects/default.css" />
-    <link rel="stylesheet" type="text/css" href="../css/GridLoadingEffects/component.css" />
-    <link rel="stylesheet" href="../css/preloader/flower.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../js/GridLoadingEffects/modernizr.custom.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wedding Gallery - Date</title>
+        <meta name="description" content="Loading Effects for Grid Items with CSS Animations" />
+        <meta name="keywords" content="../css animation, loading effect, google plus, grid items, masonry" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/GridLoadingEffects/default.css" />
+        <link rel="stylesheet" type="text/css" href="../css/GridLoadingEffects/component.css" />
+        <link rel="stylesheet" href="../css/preloader/flower.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/GridLoadingEffects/modernizr.custom.js"></script>
 
-</head>
+    </head>
 
-<body>
-    <!--CSS Spinner-->
-    <div class="flower-loader">
-            Loading...
-    </div>
-
-
+    <body>
+        <!--CSS Spinner-->
+        <div class="flower-loader">
+                Loading...
+        </div>
+        <a  href = "../index.html"><img class="button__home" src="../img/png/home.png"></a>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="button__top" src="../img/png/top_arrow.png"></button>
         <div class="container">
             <header>
                 <h1>Wedding Gallery <span> Daily Life </span></h1>	
@@ -120,7 +120,7 @@
             </ul>
 
         </div>
-    
+
         <!-- Grid Loading -->
         <script src="../js/GridLoadingEffects/masonry.pkgd.min.js"></script>
         <script src="../js/GridLoadingEffects/imagesloaded.js"></script>
@@ -133,7 +133,7 @@
                 viewportFactor: 0.2
             });
         </script>
-    
+
         <!-- Preloader -->
         <script>
                 //Preloader
@@ -145,7 +145,24 @@
                     });
                 });
         </script>
-        
+        <!-- Top Scroll -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
-    
-    </html>
+</html>
