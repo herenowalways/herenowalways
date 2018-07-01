@@ -260,7 +260,7 @@ body {
     line-height: 200%;
     font-family: "HamchorongbatangR", "바탕";
     color: rgb(126, 126, 126);
-    background-color: rgb(185, 219, 230);
+    background-color: rgb(205, 232, 241);
     line-height: 1.7;
     font-size: 15px;
     font-weight: 700;
@@ -363,6 +363,43 @@ body {
     font-weight: 300;
     font-size: 95%;
     letter-spacing: 2px;
+}
+
+
+/* Infpmation */
+.information {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 20px 20px 20px 0px;
+    width: 100%;
+    height: auto;
+    font-family: "HamchorongbatangR", "바탕";
+    color: rgb(59, 59, 59);
+    text-align: left;
+    background-color: rgb(38, 63, 109);
+    background: url(../img/png/pattern_bg3.png) repeat ;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+li{
+    position: relative;
+    list-style: none;
+    padding: 5px;
+}
+
+.information__li:before {
+    list-style: none;
+    content: "*";
+    position: absolute;
+    left: -15px;
+}
+
+@media (max-width: 480px) {
+    .information {
+        font-size: 12px;
+    }
 }
 
 /* Photostack */
