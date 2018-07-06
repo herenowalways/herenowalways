@@ -256,14 +256,24 @@ body {
     padding: 80px 0;
     width: 100%;
     height: 100%;
-    min-height: 800px;
+    min-height: 600px;
     line-height: 200%;
     font-family: "HamchorongbatangR", "바탕";
-    color: rgb(126, 126, 126);
-    background-color: rgb(205, 232, 241);
+    color: rgb(105, 105, 105);
+    background: url(../img/png/flower_bg5.png) repeat ;
     line-height: 1.7;
     font-size: 15px;
     font-weight: 700;
+}
+
+.timeline:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .timeline__img_top { /* added */
@@ -316,12 +326,15 @@ body {
 
 @media (max-width: 800px) {
     .timeline {
-        min-height: 700px;
+        min-height: 500px;
         font-size: 13px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    .timeline {
+        min-height: 620px;
+    }
     .timeline__table_section_inner{
         width: 100%;
         display: block;
@@ -348,6 +361,7 @@ body {
 }
 .timeline__td_time{
     width: 30%;
+    vertical-align:  0%;
     text-align: center;
 }
 .timeline__td_content{
@@ -377,10 +391,25 @@ body {
     font-family: "HamchorongbatangR", "바탕";
     color: rgb(59, 59, 59);
     text-align: left;
-    background-color: rgb(38, 63, 109);
-    background: url(../img/png/pattern_bg3.png) repeat ;
-    opacity: 0.5;
+    background-color: rgb(255, 228, 226);
     font-size: 15px;
+}
+
+.information:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.information__words{
+    margin: auto;
+    padding: 5px;
+    background: url(../img/png/blue-watercolor_bg.png) no-repeat ;
+    background-size: 100% 100%;
 }
 
 li{
