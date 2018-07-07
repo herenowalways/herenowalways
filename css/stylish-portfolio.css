@@ -188,6 +188,15 @@ body {
     font-size: 15px;
 }
 
+.greeting__bg_img{
+    position: absolute;
+    bottom: 3%;
+    right: 7%;
+    height: 70%;
+    width: auto;
+    opacity: 0.7;
+}
+
 .greeting__words {
     display: block;
     margin: auto;
@@ -196,6 +205,7 @@ body {
     font-size: 15px;
     font-size: 1.1em;
 }
+
 
 .greeting__img { /* added */
     display: block;
@@ -238,6 +248,14 @@ body {
     }
 }
 
+@media(max-width:500px) {
+    .greeting__bg_img{
+        bottom: 3%;
+        right: 0%;
+        height: auto;
+        width: 80%;
+    }
+}
 
 @media(max-width:350px) {
     .greeting{
