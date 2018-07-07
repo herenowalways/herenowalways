@@ -229,12 +229,13 @@
 
 /* Button on photostack container */
 
-
 .js .photostack::after {
 	content: 'View Gallery';
 	font-weight: 400;
 	position: absolute;
-	border: 3px solid white;
+	border: 3px solid transparent;
+	border-image: linear-gradient(45deg, rgb(173, 250, 255), rgb(255, 176, 189));
+	border-image-slice: 1;
 	text-align: center;
 	white-space: nowrap;
 	left: 50%;
