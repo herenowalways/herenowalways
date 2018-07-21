@@ -183,8 +183,8 @@ body {
     height: 100%;
     min-height: 750px;
     font-family: "HamchorongbatangR", "바탕";
-    color: rgb(126, 126, 126);
-    background-color: rgb(255, 221, 221);
+    color: rgb(100, 100, 100);
+    background-color: rgb(255, 230, 230);
     font-size: 15px;
 }
 
@@ -224,7 +224,7 @@ body {
 }
 .font_groom{
     font-size: 130%;
-    color: rgb(120, 155, 100);
+    color: rgb(91, 122, 73);
 }
 .font_bride{
     font-size: 130%;
@@ -283,7 +283,7 @@ body {
     min-height: 600px;
     line-height: 200%;
     font-family: "HamchorongbatangR", "바탕";
-    color: rgb(105, 105, 105);
+    color: rgb(100, 100, 100);
     background: url(../img/png/flower_bg5.png) repeat ;
     line-height: 1.7;
     font-size: 15px;
@@ -297,7 +297,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .timeline__img_top { /* added */
@@ -404,7 +404,7 @@ body {
 }
 
 
-/* Infpmation */
+/* Information */
 .information {
     position: relative;
     display: block;
@@ -415,7 +415,7 @@ body {
     font-family: "HamchorongbatangR", "바탕";
     color: rgb(59, 59, 59);
     text-align: left;
-    background-color: rgb(255, 228, 226);
+    background-color: rgb(255, 216, 213);
     font-size: 15px;
 }
 
@@ -426,13 +426,13 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .information__words{
     margin: auto;
     padding: 5px;
-    background: url(../img/png/blue-watercolor_bg.png) no-repeat ;
+    background: url(../img/png/blue-watercolor_bg.png)  no-repeat ;
     background-size: 100% 100%;
 }
 
@@ -503,11 +503,11 @@ li{
     display: block;
     padding: 30px;
     width: 100%;
-    min-height: 350px;
+    min-height: 400px;
     font-family: "HamchorongbatangR", "바탕";
     color: rgb(88, 88, 88);
-    background-color: rgb(228, 228, 228);
-    font-size: 15px;
+    background-color: rgb(238, 238, 238);
+    font-size: 17px;
 }
 
 .guide__words {
@@ -545,6 +545,13 @@ li{
     float: right;
 }
 
+@media(max-width:1100px) {
+
+    .guide{
+        min-height: 450px;
+    }
+
+}
 @media(max-width:850px) {
     .guide{
         min-height: 300px;
@@ -553,7 +560,7 @@ li{
     .guide__words {
         padding: 10px;
         line-height: 1.7;
-        font-size: 11px;
+        font-size: 13px;
         font-size: 0.7em;
         width: 100%;
         float: none;
